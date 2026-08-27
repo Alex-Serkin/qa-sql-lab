@@ -1,0 +1,14 @@
+{
+  "Servers": {
+    "1": {
+      "Name": "QA Lab DB",
+      "Group": "QA SQL Lab",
+      "Host": "postgres",
+      "Port": 5432,
+      "MaintenanceDB": "qa_lab",
+      "Username": "qa_user",
+      "PassFile": "/pgpass",
+      "SSLMode": "prefer"
+    }
+  }
+}
