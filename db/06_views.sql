@@ -21,7 +21,7 @@ SELECT
     p.name AS product_name,
     oi.quantity,
     oi.unit_price,
-    oi.quantity * oi.unit_price AS item_total
+    oi.quantity * oi.unit_price AS line_total
 FROM orders o
 JOIN users u
     ON u.id = o.user_id

@@ -74,3 +74,11 @@ SELECT
 
 ROLLBACK;       -- Test deletion without saving changes
 -- COMMIT;     -- Permanently delete changes
+
+-- Verify that deleted QA data was restored after ROLLBACK
+
+SELECT id FROM users WHERE id >= 1000 AND id < 10000;
+SELECT id FROM products WHERE id >= 1000 AND id < 10000;
+SELECT id FROM orders WHERE id >= 1000 AND id < 10000;
+SELECT order_id FROM order_items WHERE order_id >= 1000 AND order_id < 10000;
+SELECT order_id FROM payments WHERE order_id >= 1000 AND order_id < 10000;

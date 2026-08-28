@@ -5,7 +5,6 @@
 
 
 -- Find user orders
-
 SELECT *
 FROM vw_order_details
 WHERE user_id = 1;
