@@ -40,5 +40,7 @@ qa-sql-lab/
 │   └── 18_query_product_sales_view.sql
 │
 └── scripts/
-    └── generate_data.py
+│   ├── Dockerfile
+│   ├── requirements.txt
+│   └── 01_generate_data.py
 ```
