@@ -11,4 +11,4 @@ SELECT
     o.total_amount,
     o.created_at
 FROM orders o
-WHERE o.user_id = 14521;
+WHERE o.user_id = 1;

@@ -15,4 +15,4 @@ SELECT
     status,
     created_at
 FROM users
-WHERE id = 14521;
+WHERE id = 1;

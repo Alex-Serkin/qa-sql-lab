@@ -7,7 +7,7 @@
 -- Find user orders
 SELECT *
 FROM vw_order_details
-WHERE user_id = 14521;
+WHERE user_id = 1;
 
 
 -- Find completed orders

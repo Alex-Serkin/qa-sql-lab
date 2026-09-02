@@ -15,5 +15,5 @@ SELECT
 FROM orders o
 JOIN users u
     ON u.id = o.user_id
-WHERE u.id = 14521
+WHERE u.id = 1
 ORDER BY o.created_at DESC;
