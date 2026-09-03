@@ -123,9 +123,9 @@ SQL-сценарии находятся в директории `queries/`.
 Проект использует несколько источников тестовых данных:
 
 ```markdown
-Initial data          → 03_test_data.sql
-Manual QA data        → queries/
-Python-generated data → scripts/01_generate_data.py
+Initial data          → 03_test_data.sql             → 1 - 999
+Manual QA data        → queries/                     → 1000 - 9999
+Python-generated data → scripts/01_generate_data.py  → 10000+
 ```
 
 Для разных источников данных используются отдельные диапазоны ID и PostgreSQL sequences, что позволяет безопасно разделять тестовые данные.
