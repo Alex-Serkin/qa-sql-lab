@@ -78,9 +78,9 @@ qa-sql-lab/
 
 ### 1. Подготовка credentials
 
-Скопируйте или переименуйте файл 'pgpass.example' на 'pgpass'.
+Скопируйте или переименуйте файл `pgpass.example` на `pgpass`.
 Файл pgpass.example уже содержит рабочие учётные данные для лабораторного окружения.
-docker-compose.yml ожидает файл pgpass.
+> docker-compose.yml ожидает файл pgpass.
 
 ### 2. Запуск проекта
 
@@ -113,7 +113,7 @@ docker compose --profile tools run --rm python-runner
 
 Для работы с БД можно использовать:
 
-- **pgAdmin** — веб-интерфейс для управления и исследования PostgreSQL (доступен по адресу `http://localhost:5050`);
+- **pgAdmin** — веб-интерфейс для управления и исследования PostgreSQL (доступен по адресу `http://localhost:5050`, `Vitual machine-IP:5050` - для запуска с хостовой машины);
 - **DBeaver** — SQL-клиент для удобной работы с запросами.
 
 SQL-сценарии находятся в директории `queries/`.
