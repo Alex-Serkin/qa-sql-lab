@@ -12,17 +12,17 @@
 
 ## Из чего состоит
 
-```markdown
+
 Компонент | Что используется / реализовано |
-**База данных** | PostgreSQL 16 |
-**Язык запросов** | SQL / DML |
-**Объекты БД** | Constraints (FK, CHECK), Indexes, Sequences, Views |
-**Транзакции** | `COMMIT` / `ROLLBACK` |
-**Анализ производительности** | `EXPLAIN` / `EXPLAIN ANALYZE` |
-**Генерация данных** | Python + Faker + psycopg + Batch INSERT |
-**Сборка и запуск** | Docker + Docker Compose |
-**Клиенты для работы** | pgAdmin, DBeaver |
-```
+* **База данных** | PostgreSQL 16 |
+* **Язык запросов** | SQL / DML |
+* **Объекты БД** | Constraints (FK, CHECK), Indexes, Sequences, Views |
+* **Транзакции** | `COMMIT` / `ROLLBACK` |
+* **Анализ производительности** | `EXPLAIN` / `EXPLAIN ANALYZE` |
+* **Генерация данных** | Python + Faker + psycopg + Batch INSERT |
+* **Сборка и запуск** | Docker + Docker Compose |
+* **Клиенты для работы** | pgAdmin, DBeaver |
+
 
 ## Архитектура
 
