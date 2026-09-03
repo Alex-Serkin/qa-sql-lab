@@ -12,20 +12,15 @@
 
 ## Из чего состоит
 
-- PostgreSQL 16
-- SQL / DML
-- Constraints и внешние ключи
-- Indexes
-- Sequences
-- Views
-- Transactions: `COMMIT` / `ROLLBACK`
-- Проверки целостности данных
-- `EXPLAIN` / `EXPLAIN ANALYZE`
-- Python + Faker + psycopg
-- Batch INSERT
-- Docker Compose
-- pgAdmin
-- DBeaver
+Компонент | Что используется / реализовано |
+**База данных** | PostgreSQL 16 |
+**Язык запросов** | SQL / DML |
+**Объекты БД** | Constraints (FK, CHECK), Indexes, Sequences, Views |
+**Транзакции** | `COMMIT` / `ROLLBACK` |
+**Анализ производительности** | `EXPLAIN` / `EXPLAIN ANALYZE` |
+**Генерация данных** | Python + Faker + psycopg + Batch INSERT |
+**Сборка и запуск** | Docker + Docker Compose |
+**Клиенты для работы** | pgAdmin, DBeaver |
 
 ## Архитектура
 
@@ -79,7 +74,13 @@ qa-sql-lab/
 
 ## Быстрый запуск
 
-### 1. Запуск проекта
+### 1. Подготовка credentials
+
+Скопируйте или переименуйте файл 'pgpass.example' на 'pgpass'.
+Файл pgpass.example уже содержит рабочие учётные данные для лабораторного окружения.
+docker-compose.yml ожидает файл pgpass.
+
+### 2. Запуск проекта
 
 ```markdown
 docker compose up -d
@@ -90,13 +91,13 @@ docker compose up -d
 - PostgreSQL
 - pgAdmin
 
-### 2. Проверьте контейнеры
+### 3. Проверьте контейнеры
 
 ```markdown
 docker ps
 ```
 
-### 3. Запустите Python-генератор
+### 4. Запустите Python-генератор
 
 Генератор находится в отдельном Docker Compose profile и не запускается автоматически.
 
@@ -145,18 +146,6 @@ Python-generated data → scripts/01_generate_data.py
 - принципы batch INSERT;
 - проверки целостности;
 - анализ производительности запросов.
-
-## Технологии
-
-* PostgreSQL 16
-* Docker
-* Docker Compose
-* Python 3.11
-* psycopg
-* Faker
-* pgAdmin
-* DBeaver
-* SQL
 
 ## Статус проекта
 
